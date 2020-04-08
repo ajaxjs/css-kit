@@ -1,0 +1,214 @@
+/* 小样式 */
+.clear,.clear:after{clear:both;}
+.clear:after{display:block;content:'';}
+.unselect{user-select: none;-webkit-user-select:none;}
+
+/*****************
+ * 文本样式
+******************/
+
+/* 文字截断 */
+.txt-row1,.txt-row2,.txt-row3{overflow:hidden;text-overflow:ellipsis;word-break:break-all; word-wrap:break-word ;}
+.txt-row1{display:block;white-space:nowrap;}
+.txt-row2,.txt-row3{display:-webkit-box;-webkit-box-orient:vertical;}
+.txt-row2{-webkit-line-clamp:2;}
+.txt-row3{-webkit-line-clamp:3;}
+
+/* 换行 */
+.txt-br{word-break:break-all;word-wrap:break-word;white-space:pre-wrap;}
+.txt-nobr{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+/* 文字对齐 */
+.txt-l{text-align: left;}
+.txt-c{text-align: center;}
+.txt-r{text-align: right;}
+
+/* 标题大小 */
+.txt-h1,h1{font-size: 1.6em;}
+.txt-h2,h2{font-size: 1.4em;}
+.txt-h3,h3{font-size: 1.2em;}
+.txt-h4,h4{font-size: 0.9em;}
+.txt-h5,h5{font-size: 0.6em;}
+
+/* 状态文字 */
+.txt-default{color:@color-default;}
+.txt-primary{color:@color-primary;}
+.txt-success{color:@color-success;}
+.txt-warning{color:@color-warning;}
+.txt-danger{color:@color-danger;}
+.txt-gray{color:@color-gray;}
+.txt-black{color:@color-black;}
+.txt-white{color:@color-white;}
+
+.txt-d-red{color:@dark-red;}
+.txt-d-orange{color:@dark-orange;}
+.txt-d-yellow{color:@dark-yellow;}
+.txt-d-olive{color:@dark-olive;}
+.txt-d-green{color:@dark-green;}
+.txt-d-cyan{color:@dark-cyan;}
+.txt-d-blue{color:@dark-blue;}
+.txt-d-purple{color:@dark-purple;}
+.txt-d-mauve{color:@dark-mauve;}
+.txt-d-pink{color:@dark-pink;}
+.txt-d-brown{color:@dark-brown;}
+.txt-d-grey{color:@dark-grey;}
+
+.txt-l-red{color:@light-red;}
+.txt-l-orange{color:@light-orange;}
+.txt-l-yellow{color:@light-yellow;}
+.txt-l-olive{color:@light-olive;}
+.txt-l-green{color:@light-green;}
+.txt-l-cyan{color:@light-cyan;}
+.txt-l-blue{color:@light-blue;}
+.txt-l-purple{color:@light-purple;}
+.txt-l-mauve{color:@light-mauve;}
+.txt-l-pink{color:@light-pink;}
+.txt-l-brown{color:@light-brown;}
+.txt-l-grey{color:@light-grey;}
+
+/*********************************
+ * 背景及边框
+*********************************/
+/* 其它背景 */
+.bg-gray{background-color:@color-gray;}
+.bg-black{background-color:@color-black;}
+.bg-white{background-color:@color-white;}
+//魅红
+.bg-gi-red{background-image:linear-gradient(45deg, #f43f3b, #ec008c);}
+//鎏金
+.bg-gi-orange{background-image:linear-gradient(45deg, #ff9700, #ed1c24);}
+//翠柳
+.bg-gi-green{background-image:linear-gradient(45deg, #39b54a, #8dc63f);}
+//靛青
+.bg-gi-blue{background-image:linear-gradient(45deg, #0081ff, #1cbbb4);}
+//惑紫
+.bg-gi-purple{background-image:linear-gradient(45deg, #9000ff, #5e00ff);}
+//霞彩
+.bg-gi-pink{background-image:linear-gradient(45deg, #ec008c, #6739b6);}
+
+/* 深背景 */
+.bg-d{color:#FFF;}
+.bg-d-default{background-color:@color-default;}
+.bg-d-primary{background-color:@color-primary;}
+.bg-d-success{background-color:@color-success;}
+.bg-d-warning{background-color:@color-warning;}
+.bg-d-danger{background-color:@color-danger;}
+
+.bg-d-red{background-color:@dark-red;}
+.bg-d-orange{background-color:@dark-orange;}
+.bg-d-yellow{background-color:@dark-yellow;}
+.bg-d-olive{background-color:@dark-olive;}
+.bg-d-green{background-color:@dark-green;}
+.bg-d-cyan{background-color:@dark-cyan;}
+.bg-d-blue{background-color:@dark-blue;}
+.bg-d-purple{background-color:@dark-purple;}
+.bg-d-mauve{background-color:@dark-mauve;}
+.bg-d-pink{background-color:@dark-pink;}
+.bg-d-brown{background-color:@dark-brown;}
+.bg-d-grey{background-color:@dark-grey;}
+
+/* 浅背景 */
+.bg-l-default,.tips-default{background-color:@color-ligth-default;color:@color-default;}
+.bg-l-primary,.tips-primary{background-color:@color-ligth-primary;color:@color-primary;}
+.bg-l-success,.tips-success{background-color:@color-ligth-success;color:@color-success;}
+.bg-l-warning,.tips-warning{background-color:@color-ligth-warning;color:@color-warning;}
+.bg-l-danger,.tips-danger{background-color:@color-ligth-danger;color:@color-danger;}
+
+.bg-l-red{background-color:@light-red;}
+.bg-l-orange{background-color:@light-orange;}
+.bg-l-yellow{background-color:@light-yellow;}
+.bg-l-olive{background-color:@light-olive;}
+.bg-l-green{background-color:@light-green;}
+.bg-l-cyan{background-color:@light-cyan;}
+.bg-l-blue{background-color:@light-blue;}
+.bg-l-purple{background-color:@light-purple;}
+.bg-l-mauve{background-color:@light-mauve;}
+.bg-l-pink{background-color:@light-pink;}
+.bg-l-brown{background-color:@light-brown;}
+.bg-l-grey{background-color:@light-grey;}
+
+/* 边 */
+.bdr,.bdr-a,.bdr-l,.bdr-x,.bdr-r,.bdr-x,.bdr-t,.bdr-y,.bdr-b,.bdr-y{border-style:solid;border-color:@borderColor; border-width:0;}
+.bdr-a{border-width:1px}
+.bdr-l,.bdr-x{border-left-width:1px}.bdr-r,.bdr-x{border-right-width:1px}
+.bdr-t,.bdr-y{border-top-width:1px}.bdr-b,.bdr-y{border-bottom-width:1px}
+/* 边框颜色 */
+.bdr-gray{border-color:@color-gray;}
+.bdr-black{border-color:@color-black;}
+.bdr-white{border-color:@color-white;}
+
+/* 深边框 */
+.bdr-d-primary,.tips-primary{border-color:@color-primary;}
+.bdr-d-success,.tips-success{border-color:@color-success;}
+.bdr-d-warning,.tips-warning{border-color:@color-warning;}
+.bdr-d-danger,.tips-danger{border-color:@color-danger;}
+.bdr-d-red{border-color:@dark-red;}
+.bdr-d-orange{border-color:@dark-orange;}
+.bdr-d-yellow{border-color:@dark-yellow;}
+.bdr-d-olive{border-color:@dark-olive;}
+.bdr-d-green{border-color:@dark-green;}
+.bdr-d-cyan{border-color:@dark-cyan;}
+.bdr-d-blue{border-color:@dark-blue;}
+.bdr-d-purple{border-color:@dark-purple;}
+.bdr-d-mauve{border-color:@dark-mauve;}
+.bdr-d-pink{border-color:@dark-pink;}
+.bdr-d-brown{border-color:@dark-brown;}
+.bdr-d-grey{border-color:@dark-grey;}
+
+/* 浅边框 */
+.bdr-l-primary{border-color:#e6f5fe;}
+.bdr-l-success{border-color:#e4ffe4;}
+.bdr-l-warning{border-color:#fff0e5;}
+.bdr-l-danger{border-color:#feeded;}
+.bdr-l-red{border-color:@light-red;}
+.bdr-l-orange{border-color:@light-orange;}
+.bdr-l-yellow{border-color:@light-yellow;}
+.bdr-l-olive{border-color:@light-olive;}
+.bdr-l-green{border-color:@light-green;}
+.bdr-l-cyan{border-color:@light-cyan;}
+.bdr-l-blue{border-color:@light-blue;}
+.bdr-l-purple{border-color:@light-purple;}
+.bdr-l-mauve{border-color:@light-mauve;}
+.bdr-l-pink{border-color:@light-pink;}
+.bdr-l-brown{border-color:@light-brown;}
+.bdr-l-grey{border-color:@light-grey;}
+
+/* 提示 */
+[class*='tips-']{display:block;padding:10px;border-radius:5px;border-width:1px;border-style: solid;}
+
+/* Margin */
+.mg-a{margin:10px;}.mg-0{margin:0 !important;}
+.mg-t,.mg-y{margin-top:10px;}.mg-b,.mg-y{margin-bottom:10px;}
+.mg-l,.mg-x{margin-left:10px;}.mg-r,.mg-x{margin-right:10px;}
+
+.mg-a-sm{margin:5px;}
+.mg-t-sm,.mg-y-sm{margin-top:5px;}.mg-b-sm,.mg-y-sm{margin-bottom:5px;}
+.mg-l-sm,.mg-x-sm{margin-left:5px;}.mg-r-sm,.mg-x-sm{margin-right:5px;}
+
+.mg-t-emt,.mg-y-emt{margin-top:0px !important;}.mg-b-emt,.mg-y-emt{margin-bottom:0px !important;}
+.mg-l-emt,.mg-x-emt{margin-left:0px !important;}.mg-r-emt,.mg-x-emt{margin-right:0px !important;}
+
+.mg-a-lg{margin:20px;}
+.mg-t-lg,.mg-y-lg{margin-top:20px;}.mg-b-lg,.mg-y-lg{margin-bottom:20px;}
+.mg-l-lg,.mg-x-lg{margin-left:20px;}.mg-r-lg,.mg-x-lg{margin-right:20px;}
+
+/* Padding */
+.pd-a{padding:10px;}.pd-0{padding:0 !important;}
+.pd-l,.pd-x{padding-left:10px;}.pd-r,.pd-x{padding-right:10px;}
+.pd-t,.pd-y{padding-top:10px;}.pd-b,.pd-y{padding-bottom:10px;}
+.pd-a-sm{padding:5px;}
+
+.pd-l-sm,.pd-x-sm{padding-left:5px;}.pd-r-sm,.pd-x-sm{padding-right:5px;}
+.pd-t-sm,.pd-y-sm{padding-top:5px;}.pd-b-sm,.pd-y-sm{padding-bottom:5px;}
+
+.pd-a-lg{padding:20px;}
+.pd-l-lg,.pd-x-lg{padding-left:20px;}.pd-r-lg,.pd-x-lg{padding-right:20px;}
+.pd-t-lg,.pd-y-lg{padding-top:20px;}.pd-b-lg,.pd-y-lg{padding-bottom:20px;}
+
+.pd-l-emt,.pd-x-emt{padding-left:0px !important;}.pd-r-emt,.pd-x-emt{padding-right:0px !important;}
+.pd-t-emt,.pd-y-emt{padding-top:0px !important;}.pd-b-emt,.pd-y-emt{padding-bottom:0px !important;}
+
+/* Fieldset */
+fieldset{border:#eee solid 1px;}
+legend{padding:0 5px;font-size:1.1em;}
+.field-title{padding:0 10px;margin-top:10px;margin-bottom:10px;border-width:1px 0 0;}
